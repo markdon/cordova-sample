@@ -1,0 +1,14 @@
+// https://webdriver.io/docs/typescript.html
+{ 
+  "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+          "*": [ "./*" ],
+          "src/*": ["./src/*"]
+      },
+      "types": ["node", "webdriverio", "@wdio/mocha-framework"]
+  },
+  "include": [
+      "src/**/*.ts"
+  ]
+}
