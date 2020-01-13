@@ -18,6 +18,6 @@ describe('app:', () => {
         console.log(context);
         (await $('input')).setValue('I am a banana');
         await browser.url(`https://example.com/`);
-        browser.pause(10000);
+        await browser.pause(10000);
     });
 });
