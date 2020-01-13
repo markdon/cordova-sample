@@ -1,0 +1,123 @@
+Execution of 1 spec files started at 2020-01-13T00:54:17.197Z
+
+2020-01-13T00:54:17.200Z DEBUG @wdio/utils:initialiseServices: initialise wdio service "appium"
+2020-01-13T00:54:17.209Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-01-13T00:54:17.210Z DEBUG @wdio/appium-service: Will spawn Appium process: appium --log-timestamp --log ./artifacts/logs/appium.log
+2020-01-13T00:54:18.886Z DEBUG @wdio/appium-service: Appium started with ID: 77373
+2020-01-13T00:54:18.889Z INFO @wdio/local-runner: Start worker 0-0 with arg: 
+[0-0] 2020-01-13T00:54:19.292Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in /var/tmp/Debug-iphonesimulator/HelloCordova.app - /src/switch-context.ts
+[0-0] 2020-01-13T00:54:19.426Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2020-01-13T00:54:19.428Z INFO webdriverio: Initiate new session using the webdriver protocol
+[0-0] 2020-01-13T00:54:19.431Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session
+[0-0] 2020-01-13T00:54:19.431Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'iOS',
+        platformVersion: '13.3',
+        app: '/var/tmp/Debug-iphonesimulator/HelloCordova.app',
+        deviceName: 'iPhone 11',
+        newCommandTimeout: 360000 },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'iOS',
+     platformVersion: '13.3',
+     app: '/var/tmp/Debug-iphonesimulator/HelloCordova.app',
+     deviceName: 'iPhone 11',
+     newCommandTimeout: 360000 } }
+[0-0] hello!
+[0-0] 2020-01-13T00:54:38.032Z INFO webdriver: COMMAND getContexts()
+[0-0] 2020-01-13T00:54:38.033Z INFO webdriver: [GET] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts
+[0-0] 2020-01-13T00:54:38.122Z INFO webdriver: RESULT [ 'NATIVE_APP' ]
+[0-0] 2020-01-13T00:54:39.128Z INFO webdriver: COMMAND getContexts()
+[0-0] 2020-01-13T00:54:39.128Z INFO webdriver: [GET] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts
+[0-0] 2020-01-13T00:54:39.191Z INFO webdriver: RESULT [ 'NATIVE_APP', 'WEBVIEW_77420.2' ]
+[0-0] 2020-01-13T00:54:39.192Z INFO webdriver: COMMAND switchContext("WEBVIEW_77420.2")
+[0-0] 2020-01-13T00:54:39.192Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context
+[0-0] 2020-01-13T00:54:39.192Z INFO webdriver: DATA { name: 'WEBVIEW_77420.2' }
+[0-0] 2020-01-13T00:54:55.266Z INFO webdriver: COMMAND getContext()
+[0-0] 2020-01-13T00:54:55.266Z INFO webdriver: [GET] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context
+[0-0] 2020-01-13T00:54:55.271Z INFO webdriver: RESULT WEBVIEW_77420.2
+[0-0] 2020-01-13T00:54:55.273Z INFO webdriver: COMMAND findElement("css selector", "input")
+[0-0] 2020-01-13T00:54:55.273Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+[0-0] 2020-01-13T00:54:55.273Z INFO webdriver: DATA { using: 'css selector', value: 'input' }
+[0-0] 2020-01-13T00:56:25.282Z WARN webdriver: Request failed due to ESOCKETTIMEDOUT
+[0-0] 2020-01-13T00:56:25.282Z INFO webdriver: Retrying 1/3
+2020-01-13T00:56:25.282Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+[0-0] 2020-01-13T00:56:25.282Z INFO webdriver: DATA { using: 'css selector', value: 'input' }
+[0-0] 2020-01-13T00:57:55.291Z WARN webdriver: Request failed due to ESOCKETTIMEDOUT
+[0-0] 2020-01-13T00:57:55.291Z INFO webdriver: Retrying 2/3
+[0-0] 2020-01-13T00:57:55.291Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+[0-0] 2020-01-13T00:57:55.291Z INFO webdriver: DATA { using: 'css selector', value: 'input' }
+[0-0] 2020-01-13T00:59:25.299Z WARN webdriver: Request failed due to ESOCKETTIMEDOUT
+[0-0] 2020-01-13T00:59:25.299Z INFO webdriver: Retrying 3/3
+2020-01-13T00:59:25.299Z INFO webdriver: [POST] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+2020-01-13T00:59:25.299Z INFO webdriver: DATA { using: 'css selector', value: 'input' }
+[0-0] 2020-01-13T01:00:55.306Z ERROR webdriver: Request failed due to Error: ESOCKETTIMEDOUT
+    at ClientRequest.<anonymous> (/Users/mdonnellon/Documents/projects/cordova-sample/testing/node_modules/request/request.js:816:19)
+    at Object.onceWrapper (events.js:286:20)
+    at ClientRequest.emit (events.js:198:13)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at Socket.emitRequestTimeout (_http_client.js:662:40)
+    at Object.onceWrapper (events.js:286:20)
+    at Socket.emit (events.js:198:13)
+    at Socket.EventEmitter.emit (domain.js:448:20)
+    at Socket._onTimeout (net.js:443:8)
+    at ontimeout (timers.js:436:11)
+[0-0] Error in "app: loads"
+ESOCKETTIMEDOUT
+[0-0] 2020-01-13T01:00:55.321Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2020-01-13T01:00:55.321Z INFO webdriver: [DELETE] http://127.0.0.1:4723/wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c
+2020-01-13T01:00:56.566Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in /var/tmp/Debug-iphonesimulator/HelloCordova.app - /src/switch-context.ts
+2020-01-13T01:00:56.567Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-01-13T01:00:56.567Z DEBUG @wdio/appium-service: Appium (pid: 77372) killed
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iPhone 11 MAC 13.3 #0-0] Spec: /Users/mdonnellon/Documents/projects/cordova-sample/testing/src/switch-context.ts
+[iPhone 11 MAC 13.3 #0-0] Running: iPhone 11 on MAC 13.3 executing /var/tmp/Debug-iphonesimulator/HelloCordova.app
+[iPhone 11 MAC 13.3 #0-0] Session ID: 542700ec-894c-45a1-a6c1-ead03bc2ef9c
+[iPhone 11 MAC 13.3 #0-0]
+[iPhone 11 MAC 13.3 #0-0] app:
+[iPhone 11 MAC 13.3 #0-0]    ✖ loads
+[iPhone 11 MAC 13.3 #0-0]
+[iPhone 11 MAC 13.3 #0-0] 1 failing (6m 19.6s)
+[iPhone 11 MAC 13.3 #0-0]
+[iPhone 11 MAC 13.3 #0-0] 1) app: loads
+[iPhone 11 MAC 13.3 #0-0] ESOCKETTIMEDOUT
+[iPhone 11 MAC 13.3 #0-0] Error: ESOCKETTIMEDOUT
+[iPhone 11 MAC 13.3 #0-0]     at Socket.emitRequestTimeout (_http_client.js:662:40)
+[iPhone 11 MAC 13.3 #0-0]     at Socket._onTimeout (net.js:443:8)
+[iPhone 11 MAC 13.3 #0-0]     at ontimeout (timers.js:436:11)
+[iPhone 11 MAC 13.3 #0-0]     at global.$.selector (/Users/mdonnellon/Documents/projects/cordova-sample/testing/node_modules/@wdio/runner/build/index.js:192:36)
+[iPhone 11 MAC 13.3 #0-0]     at Object.<anonymous> (/Users/mdonnellon/Documents/projects/cordova-sample/testing/src/switch-context.ts:18:16)
+[iPhone 11 MAC 13.3 #0-0]     at step (/Users/mdonnellon/Documents/projects/cordova-sample/testing/src/switch-context.ts:32:23)
+[iPhone 11 MAC 13.3 #0-0]     at Object.next (/Users/mdonnellon/Documents/projects/cordova-sample/testing/src/switch-context.ts:13:53)
+[iPhone 11 MAC 13.3 #0-0]     at fulfilled (/Users/mdonnellon/Documents/projects/cordova-sample/testing/src/switch-context.ts:4:58)
+
+
+Spec Files:      0 passed, 1 failed, 1 total (100% completed) in 00:06:39 
+
+2020-01-13T01:00:56.578Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-01-13T01:00:56.833Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2020-01-13T01:00:56.833Z INFO @wdio/local-runner: shutting down
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! testing@1.0.0 wdio: `wdio`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the testing@1.0.0 wdio script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mdonnellon/.npm/_logs/2020-01-13T01_00_56_849Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! com.example.cordova@1.0.0 build:appium: `cordova prepare ios && cd platforms/ios && rm -Rf /var/tmp/Debug-iphonesimulator* && xcodebuild -workspace "HelloCordova.xcworkspace" -scheme "HelloCordova" -configuration "Debug" -sdk iphonesimulator SYMROOT='/var/tmp/' build && cd ../.. && cd testing && npm run wdio`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the com.example.cordova@1.0.0 build:appium script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mdonnellon/.npm/_logs/2020-01-13T01_00_56_878Z-debug.log

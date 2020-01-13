@@ -1,0 +1,521 @@
+2020-01-13 00:54:18:855 [Appium] Welcome to Appium v1.16.0-beta.3
+2020-01-13 00:54:18:856 [Appium] Non-default server args:
+2020-01-13 00:54:18:857 [Appium]   logFile: ./artifacts/logs/appium.log
+2020-01-13 00:54:18:857 [Appium]   logTimestamp: true
+2020-01-13 00:54:18:886 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2020-01-13 00:54:19:469 [HTTP] --> POST /wd/hub/session
+2020-01-13 00:54:19:470 [HTTP] {"capabilities":{"alwaysMatch":{"platformName":"iOS","platformVersion":"13.3","app":"/var/tmp/Debug-iphonesimulator/HelloCordova.app","deviceName":"iPhone 11","newCommandTimeout":360000},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"iOS","platformVersion":"13.3","app":"/var/tmp/Debug-iphonesimulator/HelloCordova.app","deviceName":"iPhone 11","newCommandTimeout":360000}}
+2020-01-13 00:54:19:472 [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","platformVersion":"13.3","app":"/var/tmp/Debug-iphonesimulator/HelloCordova.app","deviceName":"iPhone 11","newCommandTimeout":360000},null,{"alwaysMatch":{"platformName":"iOS","platformVersion":"13.3","app":"/var/tmp/Debug-iphonesimulator/HelloCordova.app","deviceName":"iPhone 11","newCommandTimeout":360000},"firstMatch":[{}]}]
+2020-01-13 00:54:19:472 [BaseDriver] Event 'newSessionRequested' logged at 1578876859472 (11:54:19 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:19:475 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2020-01-13 00:54:19:475 [BaseDriver]   platformVersion
+2020-01-13 00:54:19:476 [BaseDriver]   app
+2020-01-13 00:54:19:476 [BaseDriver]   deviceName
+2020-01-13 00:54:19:476 [BaseDriver]   newCommandTimeout
+2020-01-13 00:54:19:480 [Appium] DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for iOS sessions.
+2020-01-13 00:54:19:480 [Appium] Requested iOS support with version >= 10, using 'XCUITest' driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+2020-01-13 00:54:20:013 [Appium] Appium v1.16.0-beta.3 creating new XCUITestDriver (v3.12.0) session
+2020-01-13 00:54:20:015 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2020-01-13 00:54:20:015 [BaseDriver] Creating session with W3C capabilities: {
+2020-01-13 00:54:20:016 [BaseDriver]   "alwaysMatch": {
+2020-01-13 00:54:20:016 [BaseDriver]     "platformName": "iOS",
+2020-01-13 00:54:20:016 [BaseDriver]     "appium:platformVersion": "13.3",
+2020-01-13 00:54:20:016 [BaseDriver]     "appium:app": "/var/tmp/Debug-iphonesimulator/HelloCordova.app",
+2020-01-13 00:54:20:016 [BaseDriver]     "appium:deviceName": "iPhone 11",
+2020-01-13 00:54:20:016 [BaseDriver]     "appium:newCommandTimeout": 360000
+2020-01-13 00:54:20:016 [BaseDriver]   },
+2020-01-13 00:54:20:017 [BaseDriver]   "firstMatch": [
+2020-01-13 00:54:20:017 [BaseDriver]     {}
+2020-01-13 00:54:20:017 [BaseDriver]   ]
+2020-01-13 00:54:20:017 [BaseDriver] }
+2020-01-13 00:54:20:031 [BaseDriver] Session created with session id: 542700ec-894c-45a1-a6c1-ead03bc2ef9c
+2020-01-13 00:54:20:047 [XCUITest] Current user: 'mdonnellon'
+2020-01-13 00:54:20:089 [XCUITest] iOS SDK Version set to '13.2'
+2020-01-13 00:54:20:214 [iOSSim] Constructing iOS simulator for Xcode version 11.3 with udid 'C20E708A-651B-4895-AE76-E7578D3BB0D6'
+2020-01-13 00:54:20:215 [XCUITest] Determining device to run tests on: udid: 'C20E708A-651B-4895-AE76-E7578D3BB0D6', real device: false
+2020-01-13 00:54:20:231 [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1578876860231 (11:54:20 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:20:233 [BaseDriver] Using local app '/var/tmp/Debug-iphonesimulator/HelloCordova.app'
+2020-01-13 00:54:20:233 [BaseDriver] Event 'appConfigured' logged at 1578876860233 (11:54:20 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:20:233 [XCUITest] Checking whether app '/var/tmp/Debug-iphonesimulator/HelloCordova.app' is actually present on file system
+2020-01-13 00:54:20:234 [XCUITest] App is present
+2020-01-13 00:54:20:235 [iOS] Getting bundle ID from app '/var/tmp/Debug-iphonesimulator/HelloCordova.app': 'com.example.cordova'
+2020-01-13 00:54:20:235 [BaseDriver] Event 'resetStarted' logged at 1578876860235 (11:54:20 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:20:457 [XCUITest] Not scrubbing third party app in anticipation of uninstall
+2020-01-13 00:54:20:457 [BaseDriver] Event 'resetComplete' logged at 1578876860457 (11:54:20 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:20:572 [IOSSimulatorLog] Starting log capture for iOS Simulator with udid 'C20E708A-651B-4895-AE76-E7578D3BB0D6', using 'xcrun simctl spawn C20E708A-651B-4895-AE76-E7578D3BB0D6 log stream --style compact'
+2020-01-13 00:54:20:896 [BaseDriver] Event 'logCaptureStarted' logged at 1578876860896 (11:54:20 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:20:896 [XCUITest] Setting up simulator
+2020-01-13 00:54:20:896 [iOS] No reason to set locale
+2020-01-13 00:54:20:897 [iOS] No iOS / app preferences to set
+2020-01-13 00:54:20:897 [iOS] Setting did not need to be updated
+2020-01-13 00:54:20:898 [iOSSim] Setting preferences of C20E708A-651B-4895-AE76-E7578D3BB0D6 Simulator to {"ConnectHardwareKeyboard":false}
+2020-01-13 00:54:20:898 [iOSSim] Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+2020-01-13 00:54:20:932 [iOSSim] Updated C20E708A-651B-4895-AE76-E7578D3BB0D6 Simulator preferences at '/Users/mdonnellon/Library/Preferences/com.apple.iphonesimulator.plist' with {"DevicePreferences":{"C20E708A-651B-4895-AE76-E7578D3BB0D6":{"ConnectHardwareKeyboard":false}},"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+2020-01-13 00:54:21:088 [iOSSim] Got Simulator UI client PID: 71235
+2020-01-13 00:54:21:089 [iOSSim] Both Simulator with UDID 'C20E708A-651B-4895-AE76-E7578D3BB0D6' and the UI client are currently running
+2020-01-13 00:54:21:089 [BaseDriver] Event 'simStarted' logged at 1578876861089 (11:54:21 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:21:090 [XCUITest] Verifying application platform
+2020-01-13 00:54:21:091 [XCUITest] CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+2020-01-13 00:54:21:211 [XCUITest] Reset requested. Removing app with id 'com.example.cordova' from the device
+2020-01-13 00:54:22:357 [XCUITest] Installing '/var/tmp/Debug-iphonesimulator/HelloCordova.app' on Simulator with UUID 'C20E708A-651B-4895-AE76-E7578D3BB0D6'...
+2020-01-13 00:54:23:777 [XCUITest] The app has been installed successfully.
+2020-01-13 00:54:23:777 [BaseDriver] Event 'appInstalled' logged at 1578876863777 (11:54:23 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:23:779 [WebDriverAgent] Using WDA path: '/Users/mdonnellon/.nvm/versions/node/v10.17.0/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+2020-01-13 00:54:23:779 [WebDriverAgent] Using WDA agent: '/Users/mdonnellon/.nvm/versions/node/v10.17.0/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2020-01-13 00:54:23:899 [WebDriverAgent] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+2020-01-13 00:54:23:899 [DevCon Factory] Requesting connection for device C20E708A-651B-4895-AE76-E7578D3BB0D6 on local port 8100, device port 8100
+2020-01-13 00:54:23:900 [DevCon Factory] Cached connections count: 0
+2020-01-13 00:54:23:900 [DevCon Factory] Successfully requested the connection for C20E708A-651B-4895-AE76-E7578D3BB0D6:8100
+2020-01-13 00:54:23:901 [XCUITest] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2020-01-13 00:54:23:903 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-01-13 00:54:23:904 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2020-01-13 00:54:23:916 [WD Proxy] Got response with status 200: {
+2020-01-13 00:54:23:916 [WD Proxy]   "value" : {
+2020-01-13 00:54:23:916 [WD Proxy]     "message" : "WebDriverAgent is ready to accept commands",
+2020-01-13 00:54:23:916 [WD Proxy]     "state" : "success",
+2020-01-13 00:54:23:916 [WD Proxy]     "os" : {
+2020-01-13 00:54:23:917 [WD Proxy]       "name" : "iOS",
+2020-01-13 00:54:23:917 [WD Proxy]       "version" : "13.3",
+2020-01-13 00:54:23:917 [WD Proxy]       "sdkVersion" : "13.0"
+2020-01-13 00:54:23:917 [WD Proxy]     },
+2020-01-13 00:54:23:917 [WD Proxy]     "ios" : {
+2020-01-13 00:54:23:917 [WD Proxy]       "simulatorVersion" : "13.3",
+2020-01-13 00:54:23:917 [WD Proxy]       "ip" : "192.168.16.194"
+2020-01-13 00:54:23:918 [WD Proxy]     },
+2020-01-13 00:54:23:918 [WD Proxy]     "ready" : true,
+2020-01-13 00:54:23:918 [WD Proxy]     "build" : {
+2020-01-13 00:54:23:918 [WD Proxy]       "upgradedAt" : "1578874804279",
+2020-01-13 00:54:23:918 [WD Proxy]       "time" : "Jan 13 2020 11:20:16",
+2020-01-13 00:54:23:919 [WD Proxy]       "productBundleIdentifier" : "com.facebook.WebDriverAgentRunner"
+2020-01-13 00:54:23:919 [WD Proxy]     }
+2020-01-13 00:54:23:919 [WD Proxy]   },
+2020-01-13 00:54:23:920 [WD Proxy]   "sessionId" : "2D4562BC-C9AD-446F-9741-8D2DE0DD229E"
+2020-01-13 00:54:23:920 [WD Proxy] }
+2020-01-13 00:54:23:922 [WebDriverAgent] Upgrade timestamp of the currently bundled WDA: 1578874804279
+2020-01-13 00:54:23:922 [WebDriverAgent] Upgrade timestamp of the WDA on the device: 1578874804279
+2020-01-13 00:54:23:922 [WebDriverAgent] Will reuse previously cached WDA instance at 'http://127.0.0.1:8100/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8100 if this is an undesired behavior.
+2020-01-13 00:54:23:922 [XCUITest] Trying to start WebDriverAgent 2 times with 10000ms interval
+2020-01-13 00:54:23:923 [XCUITest] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2020-01-13 00:54:23:923 [BaseDriver] Event 'wdaStartAttempted' logged at 1578876863923 (11:54:23 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:23:923 [WebDriverAgent] Using provided WebdriverAgent at 'http://127.0.0.1:8100/'
+2020-01-13 00:54:23:924 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-01-13 00:54:23:924 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2020-01-13 00:54:23:927 [WD Proxy] Got response with status 200: {
+2020-01-13 00:54:23:928 [WD Proxy]   "value" : {
+2020-01-13 00:54:23:928 [WD Proxy]     "message" : "WebDriverAgent is ready to accept commands",
+2020-01-13 00:54:23:928 [WD Proxy]     "state" : "success",
+2020-01-13 00:54:23:928 [WD Proxy]     "os" : {
+2020-01-13 00:54:23:928 [WD Proxy]       "name" : "iOS",
+2020-01-13 00:54:23:928 [WD Proxy]       "version" : "13.3",
+2020-01-13 00:54:23:928 [WD Proxy]       "sdkVersion" : "13.0"
+2020-01-13 00:54:23:929 [WD Proxy]     },
+2020-01-13 00:54:23:929 [WD Proxy]     "ios" : {
+2020-01-13 00:54:23:929 [WD Proxy]       "simulatorVersion" : "13.3",
+2020-01-13 00:54:23:929 [WD Proxy]       "ip" : "192.168.16.194"
+2020-01-13 00:54:23:929 [WD Proxy]     },
+2020-01-13 00:54:23:929 [WD Proxy]     "ready" : true,
+2020-01-13 00:54:23:930 [WD Proxy]     "build" : {
+2020-01-13 00:54:23:930 [WD Proxy]       "upgradedAt" : "1578874804279",
+2020-01-13 00:54:23:930 [WD Proxy]       "time" : "Jan 13 2020 11:20:16",
+2020-01-13 00:54:23:930 [WD Proxy]       "productBundleIdentifier" : "com.facebook.WebDriverAgentRunner"
+2020-01-13 00:54:23:930 [WD Proxy]     }
+2020-01-13 00:54:23:930 [WD Proxy]   },
+2020-01-13 00:54:23:930 [WD Proxy]   "sessionId" : "2D4562BC-C9AD-446F-9741-8D2DE0DD229E"
+2020-01-13 00:54:23:930 [WD Proxy] }
+2020-01-13 00:54:23:931 [BaseDriver] Event 'wdaSessionAttempted' logged at 1578876863931 (11:54:23 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:23:931 [XCUITest] Sending createSession command to WDA
+2020-01-13 00:54:23:932 [WD Proxy] Matched '/session' to command name 'createSession'
+2020-01-13 00:54:23:933 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"com.example.cordova","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}],"alwaysMatch":{}}}
+2020-01-13 00:54:36:437 [WD Proxy] Got response with status 200: {"value":{"sessionId":"12B0AEC0-BB0E-4318-9612-290554863A11","capabilities":{"device":"iphone","browserName":"HelloCordova","sdkVersion":"13.3","CFBundleIdentifier":"com.example.cordova"}},"sessionId":"12B0AEC0-BB0E-4318-9612-290554863A11"}
+2020-01-13 00:54:36:437 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-01-13 00:54:36:438 [BaseDriver] Event 'wdaSessionStarted' logged at 1578876876437 (11:54:36 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:36:438 [BaseDriver] Event 'wdaStarted' logged at 1578876876438 (11:54:36 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:36:438 [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2020-01-13 00:54:36:439 [BaseDriver] Event 'orientationSet' logged at 1578876876439 (11:54:36 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:36:439 [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+2020-01-13 00:54:36:440 [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+2020-01-13 00:54:36:440 [Appium] New XCUITestDriver session created successfully, session 542700ec-894c-45a1-a6c1-ead03bc2ef9c added to master session list
+2020-01-13 00:54:36:441 [BaseDriver] Event 'newSessionStarted' logged at 1578876876441 (11:54:36 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 00:54:36:442 [W3C (542700ec)] Cached the protocol value 'W3C' for the new session 542700ec-894c-45a1-a6c1-ead03bc2ef9c
+2020-01-13 00:54:36:443 [W3C (542700ec)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","platformVersion":"13.3","app":"/var/tmp/Debug-iphonesimulator/HelloCordova.app","deviceName":"iPhone 11","newCommandTimeout":360000,"udid":"C20E708A-651B-4895-AE76-E7578D3BB0D6"}}
+2020-01-13 00:54:36:447 [HTTP] <-- POST /wd/hub/session 200 16976 ms - 475
+2020-01-13 00:54:36:448 [HTTP] 
+2020-01-13 00:54:38:040 [HTTP] --> GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts
+2020-01-13 00:54:38:040 [HTTP] {}
+2020-01-13 00:54:38:048 [W3C (542700ec)] Calling AppiumDriver.getContexts() with args: ["542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:54:38:049 [XCUITest] Executing command 'getContexts'
+2020-01-13 00:54:38:050 [iOS] Getting list of available contexts
+2020-01-13 00:54:38:050 [iOS] Retrieving contexts and views
+2020-01-13 00:54:38:051 [XCUITest] Selecting by url: false 
+2020-01-13 00:54:38:093 [RemoteDebugger] Remote Debugger version 7.5.1
+2020-01-13 00:54:38:094 [RemoteDebugger] useNewSafari --> false
+2020-01-13 00:54:38:095 [RemoteDebugger] Checking which communication style to use (non-Safari on platform version '13.3')
+2020-01-13 00:54:38:096 [RemoteDebugger] Platform version equal or higher than '12.2': true
+2020-01-13 00:54:38:096 [RemoteDebugger] Setting communication protocol: using full Web Inspector protocol communication
+2020-01-13 00:54:38:097 [RemoteDebugger] Connecting to remote debugger through unix domain socket: '/private/tmp/com.apple.launchd.YYZ3MCwk1r/com.apple.webinspectord_sim.socket'
+2020-01-13 00:54:38:103 [RemoteDebugger] Debugger socket connected
+2020-01-13 00:54:38:103 [RemoteDebugger] Sending connection key request
+2020-01-13 00:54:38:104 [RemoteDebugger] Sending '_rpc_reportIdentifier:' message (id: 0)
+2020-01-13 00:54:38:113 [RemoteDebugger] Sending to Web Inspector took 9ms
+2020-01-13 00:54:38:113 [RemoteDebugger] Sending connection key request
+2020-01-13 00:54:38:113 [RemoteDebugger] Sending '_rpc_reportIdentifier:' message (id: 1)
+2020-01-13 00:54:38:117 [RemoteDebugger] Sending to Web Inspector took 4ms
+2020-01-13 00:54:38:118 [RemoteDebugger] Selecting application
+2020-01-13 00:54:38:118 [RemoteDebugger] No applications currently connected.
+2020-01-13 00:54:38:118 [XCUITest] No web frames found.
+2020-01-13 00:54:38:120 [W3C (542700ec)] Responding to client with driver.getContexts() result: ["NATIVE_APP"]
+2020-01-13 00:54:38:121 [HTTP] <-- GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts 200 81 ms - 24
+2020-01-13 00:54:38:122 [HTTP] 
+2020-01-13 00:54:38:257 [RemoteDebugger] Received connected applications list: PID:77420
+2020-01-13 00:54:38:258 [RemoteDebugger] Received connected driver list: {}
+2020-01-13 00:54:38:260 [RemoteDebugger] Notified that new application 'PID:76146' has connected
+2020-01-13 00:54:38:261 [RemoteDebugger] Found app id key 'PID:77420' for bundle 'com.example.cordova'
+2020-01-13 00:54:38:262 [RemoteDebugger] Notified that new application 'PID:77423' has connected
+2020-01-13 00:54:38:271 [RemoteDebugger] Notified that new application 'PID:76149' has connected
+2020-01-13 00:54:38:272 [RemoteDebugger] Notified that new application 'PID:75945' has connected
+2020-01-13 00:54:38:273 [RemoteDebugger] Notified that new application 'PID:76148' has connected
+2020-01-13 00:54:38:452 [RemoteDebugger] Page changed: {
+2020-01-13 00:54:38:452 [RemoteDebugger]   "2": {
+2020-01-13 00:54:38:452 [RemoteDebugger]     "WIRTitleKey": "",
+2020-01-13 00:54:38:452 [RemoteDebugger]     "WIRTypeKey": "WIRTypeWeb",
+2020-01-13 00:54:38:453 [RemoteDebugger]     "WIRURLKey": "file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html",
+2020-01-13 00:54:38:453 [RemoteDebugger]     "WIRPageIdentifierKey": 2
+2020-01-13 00:54:38:453 [RemoteDebugger]   }
+2020-01-13 00:54:38:453 [RemoteDebugger] }
+2020-01-13 00:54:38:453 [XCUITest] Remote debugger notified us of a new page listing: {"appIdKey":"77420","pageArray":[{"id":2,"title":"","url":"file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html","isKey":false}]}
+2020-01-13 00:54:38:454 [XCUITest] No key id found. Choosing first id from page array
+2020-01-13 00:54:38:454 [XCUITest] We do not appear to have window set yet, ignoring
+2020-01-13 00:54:38:534 [RemoteDebugger] Page changed: {
+2020-01-13 00:54:38:534 [RemoteDebugger]   "1": {
+2020-01-13 00:54:38:534 [RemoteDebugger]     "WIRTitleKey": "Kudos Boards",
+2020-01-13 00:54:38:534 [RemoteDebugger]     "WIRTypeKey": "WIRTypeWeb",
+2020-01-13 00:54:38:534 [RemoteDebugger]     "WIRURLKey": "https://kudosboards.com/auth/signin",
+2020-01-13 00:54:38:535 [RemoteDebugger]     "WIRPageIdentifierKey": 1
+2020-01-13 00:54:38:535 [RemoteDebugger]   },
+2020-01-13 00:54:38:535 [RemoteDebugger]   "2": {
+2020-01-13 00:54:38:535 [RemoteDebugger]     "WIRTitleKey": "Example Domain",
+2020-01-13 00:54:38:535 [RemoteDebugger]     "WIRTypeKey": "WIRTypeWeb",
+2020-01-13 00:54:38:535 [RemoteDebugger]     "WIRURLKey": "https://example.com/",
+2020-01-13 00:54:38:535 [RemoteDebugger]     "WIRPageIdentifierKey": 2
+2020-01-13 00:54:38:535 [RemoteDebugger]   }
+2020-01-13 00:54:38:536 [RemoteDebugger] }
+2020-01-13 00:54:38:536 [XCUITest] Remote debugger notified us of a new page listing: {"appIdKey":"76146","pageArray":[{"id":1,"title":"Kudos Boards","url":"https://kudosboards.com/auth/signin","isKey":false},{"id":2,"title":"Example Domain","url":"https://example.com/","isKey":false}]}
+2020-01-13 00:54:38:536 [XCUITest] No key id found. Choosing first id from page array
+2020-01-13 00:54:38:536 [XCUITest] We do not appear to have window set yet, ignoring
+2020-01-13 00:54:39:131 [HTTP] --> GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts
+2020-01-13 00:54:39:132 [HTTP] {}
+2020-01-13 00:54:39:132 [W3C (542700ec)] Calling AppiumDriver.getContexts() with args: ["542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:54:39:132 [XCUITest] Executing command 'getContexts'
+2020-01-13 00:54:39:132 [iOS] Getting list of available contexts
+2020-01-13 00:54:39:133 [iOS] Retrieving contexts and views
+2020-01-13 00:54:39:133 [XCUITest] Selecting by url: false 
+2020-01-13 00:54:39:133 [RemoteDebugger] Selecting application
+2020-01-13 00:54:39:134 [RemoteDebugger] Current applications available:
+2020-01-13 00:54:39:134 [RemoteDebugger]     Application: 'PID:77420'
+2020-01-13 00:54:39:134 [RemoteDebugger]         id: "PID:77420"
+2020-01-13 00:54:39:135 [RemoteDebugger]         isProxy: false
+2020-01-13 00:54:39:135 [RemoteDebugger]         name: "HelloCordova"
+2020-01-13 00:54:39:135 [RemoteDebugger]         bundleId: "com.example.cordova"
+2020-01-13 00:54:39:136 [RemoteDebugger]         hostId: undefined
+2020-01-13 00:54:39:137 [RemoteDebugger]         isActive: 2
+2020-01-13 00:54:39:137 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:137 [RemoteDebugger]         pageArray:
+2020-01-13 00:54:39:137 [RemoteDebugger]           - id: 2
+2020-01-13 00:54:39:137 [RemoteDebugger]             title: ""
+2020-01-13 00:54:39:138 [RemoteDebugger]             url: "file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html"
+2020-01-13 00:54:39:138 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:138 [RemoteDebugger]     Application: 'PID:76146'
+2020-01-13 00:54:39:138 [RemoteDebugger]         id: "PID:76146"
+2020-01-13 00:54:39:138 [RemoteDebugger]         isProxy: false
+2020-01-13 00:54:39:138 [RemoteDebugger]         name: "Safari"
+2020-01-13 00:54:39:139 [RemoteDebugger]         bundleId: "com.apple.mobilesafari"
+2020-01-13 00:54:39:139 [RemoteDebugger]         hostId: undefined
+2020-01-13 00:54:39:139 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:139 [RemoteDebugger]         isAutomationEnabled: true
+2020-01-13 00:54:39:139 [RemoteDebugger]         pageArray:
+2020-01-13 00:54:39:139 [RemoteDebugger]           - id: 1
+2020-01-13 00:54:39:140 [RemoteDebugger]             title: "Kudos Boards"
+2020-01-13 00:54:39:140 [RemoteDebugger]             url: "https://kudosboards.com/auth/signin"
+2020-01-13 00:54:39:140 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:140 [RemoteDebugger]           - id: 2
+2020-01-13 00:54:39:140 [RemoteDebugger]             title: "Example Domain"
+2020-01-13 00:54:39:141 [RemoteDebugger]             url: "https://example.com/"
+2020-01-13 00:54:39:144 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:144 [RemoteDebugger]     Application: 'PID:77423'
+2020-01-13 00:54:39:145 [RemoteDebugger]         id: "PID:77423"
+2020-01-13 00:54:39:145 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:145 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:146 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:146 [RemoteDebugger]         hostId: "PID:77420"
+2020-01-13 00:54:39:146 [RemoteDebugger]         isActive: 2
+2020-01-13 00:54:39:147 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:147 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:147 [RemoteDebugger]     Application: 'PID:76149'
+2020-01-13 00:54:39:147 [RemoteDebugger]         id: "PID:76149"
+2020-01-13 00:54:39:148 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:148 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:148 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:148 [RemoteDebugger]         hostId: "PID:76146"
+2020-01-13 00:54:39:148 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:149 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:149 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:149 [RemoteDebugger]     Application: 'PID:75945'
+2020-01-13 00:54:39:149 [RemoteDebugger]         id: "PID:75945"
+2020-01-13 00:54:39:149 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:150 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:150 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:150 [RemoteDebugger]         hostId: "PID:75942"
+2020-01-13 00:54:39:150 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:151 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:151 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:151 [RemoteDebugger]     Application: 'PID:76148'
+2020-01-13 00:54:39:151 [RemoteDebugger]         id: "PID:76148"
+2020-01-13 00:54:39:151 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:152 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:152 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:152 [RemoteDebugger]         hostId: "PID:76146"
+2020-01-13 00:54:39:152 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:152 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:152 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:153 [RemoteDebugger] Checking for bundle identifiers: process-SafariViewService, *, com.example.cordova
+2020-01-13 00:54:39:153 [RemoteDebugger] Found app id key 'PID:77423' for bundle 'process-SafariViewService'
+2020-01-13 00:54:39:154 [RemoteDebugger] Found app id key 'PID:77423' for bundle '*'
+2020-01-13 00:54:39:154 [RemoteDebugger] Found app id key 'PID:77420' for bundle 'com.example.cordova'
+2020-01-13 00:54:39:154 [RemoteDebugger] Found separate bundleId 'process-com.apple.WebKit.WebContent' acting as proxy for 'com.example.cordova', with app id 'PID:77423'
+2020-01-13 00:54:39:154 [RemoteDebugger] Trying out the possible app ids: PID:77423, PID:77420 (try #1 of 20)
+2020-01-13 00:54:39:154 [RemoteDebugger] Attempting app 'PID:77423'
+2020-01-13 00:54:39:155 [RemoteDebugger] Sending '_rpc_forwardGetListing:' message to app 'PID:77423' (id: 2)
+2020-01-13 00:54:39:160 [RemoteDebugger] Received response from send (id: 2): '["PID:77423",{}]'
+2020-01-13 00:54:39:161 [RemoteDebugger] Sending to Web Inspector took 6ms
+2020-01-13 00:54:39:161 [RemoteDebugger] Empty page dictionary received
+2020-01-13 00:54:39:167 [RemoteDebugger] Error checking application: 'Empty page dictionary received'. Retrying connection
+2020-01-13 00:54:39:167 [RemoteDebugger] Attempting app 'PID:77420'
+2020-01-13 00:54:39:167 [RemoteDebugger] Sending '_rpc_forwardGetListing:' message to app 'PID:77420' (id: 3)
+2020-01-13 00:54:39:171 [RemoteDebugger] Received response from send (id: 3): '["PID:77420",{"2":{"WIRTitleKey":"","WIRTypeKey":"WIRTypeWeb","WIRURLKey":"file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bund...'
+2020-01-13 00:54:39:171 [RemoteDebugger] Received page change notice for app 'PID:77420' but the listing has not changed. Ignoring.
+2020-01-13 00:54:39:172 [RemoteDebugger] Page changed: {
+2020-01-13 00:54:39:172 [RemoteDebugger]   "2": {
+2020-01-13 00:54:39:172 [RemoteDebugger]     "WIRTitleKey": "",
+2020-01-13 00:54:39:172 [RemoteDebugger]     "WIRTypeKey": "WIRTypeWeb",
+2020-01-13 00:54:39:172 [RemoteDebugger]     "WIRURLKey": "file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html",
+2020-01-13 00:54:39:172 [RemoteDebugger]     "WIRPageIdentifierKey": 2
+2020-01-13 00:54:39:173 [RemoteDebugger]   }
+2020-01-13 00:54:39:173 [RemoteDebugger] }
+2020-01-13 00:54:39:173 [XCUITest] Remote debugger notified us of a new page listing: {"appIdKey":"77420","pageArray":[{"id":2,"title":"","url":"file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html","isKey":false}]}
+2020-01-13 00:54:39:173 [XCUITest] No key id found. Choosing first id from page array
+2020-01-13 00:54:39:173 [XCUITest] We do not appear to have window set yet, ignoring
+2020-01-13 00:54:39:174 [RemoteDebugger] Sending to Web Inspector took 7ms
+2020-01-13 00:54:39:174 [RemoteDebugger] Current applications available:
+2020-01-13 00:54:39:174 [RemoteDebugger]     Application: 'PID:77420'
+2020-01-13 00:54:39:175 [RemoteDebugger]         id: "PID:77420"
+2020-01-13 00:54:39:175 [RemoteDebugger]         isProxy: false
+2020-01-13 00:54:39:175 [RemoteDebugger]         name: "HelloCordova"
+2020-01-13 00:54:39:175 [RemoteDebugger]         bundleId: "com.example.cordova"
+2020-01-13 00:54:39:175 [RemoteDebugger]         hostId: undefined
+2020-01-13 00:54:39:175 [RemoteDebugger]         isActive: 2
+2020-01-13 00:54:39:175 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:176 [RemoteDebugger]         pageArray:
+2020-01-13 00:54:39:176 [RemoteDebugger]           - id: 2
+2020-01-13 00:54:39:176 [RemoteDebugger]             title: ""
+2020-01-13 00:54:39:176 [RemoteDebugger]             url: "file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html"
+2020-01-13 00:54:39:177 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:177 [RemoteDebugger]     Application: 'PID:76146'
+2020-01-13 00:54:39:177 [RemoteDebugger]         id: "PID:76146"
+2020-01-13 00:54:39:177 [RemoteDebugger]         isProxy: false
+2020-01-13 00:54:39:178 [RemoteDebugger]         name: "Safari"
+2020-01-13 00:54:39:178 [RemoteDebugger]         bundleId: "com.apple.mobilesafari"
+2020-01-13 00:54:39:178 [RemoteDebugger]         hostId: undefined
+2020-01-13 00:54:39:178 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:178 [RemoteDebugger]         isAutomationEnabled: true
+2020-01-13 00:54:39:179 [RemoteDebugger]         pageArray:
+2020-01-13 00:54:39:179 [RemoteDebugger]           - id: 1
+2020-01-13 00:54:39:179 [RemoteDebugger]             title: "Kudos Boards"
+2020-01-13 00:54:39:179 [RemoteDebugger]             url: "https://kudosboards.com/auth/signin"
+2020-01-13 00:54:39:179 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:179 [RemoteDebugger]           - id: 2
+2020-01-13 00:54:39:180 [RemoteDebugger]             title: "Example Domain"
+2020-01-13 00:54:39:180 [RemoteDebugger]             url: "https://example.com/"
+2020-01-13 00:54:39:180 [RemoteDebugger]             isKey: false
+2020-01-13 00:54:39:180 [RemoteDebugger]     Application: 'PID:77423'
+2020-01-13 00:54:39:180 [RemoteDebugger]         id: "PID:77423"
+2020-01-13 00:54:39:181 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:182 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:182 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:182 [RemoteDebugger]         hostId: "PID:77420"
+2020-01-13 00:54:39:182 [RemoteDebugger]         isActive: 2
+2020-01-13 00:54:39:183 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:183 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:183 [RemoteDebugger]     Application: 'PID:76149'
+2020-01-13 00:54:39:183 [RemoteDebugger]         id: "PID:76149"
+2020-01-13 00:54:39:183 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:184 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:184 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:184 [RemoteDebugger]         hostId: "PID:76146"
+2020-01-13 00:54:39:184 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:185 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:185 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:185 [RemoteDebugger]     Application: 'PID:75945'
+2020-01-13 00:54:39:185 [RemoteDebugger]         id: "PID:75945"
+2020-01-13 00:54:39:186 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:186 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:186 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:186 [RemoteDebugger]         hostId: "PID:75942"
+2020-01-13 00:54:39:186 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:187 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:187 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:187 [RemoteDebugger]     Application: 'PID:76148'
+2020-01-13 00:54:39:187 [RemoteDebugger]         id: "PID:76148"
+2020-01-13 00:54:39:187 [RemoteDebugger]         isProxy: true
+2020-01-13 00:54:39:188 [RemoteDebugger]         name: "com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:188 [RemoteDebugger]         bundleId: "process-com.apple.WebKit.WebContent"
+2020-01-13 00:54:39:188 [RemoteDebugger]         hostId: "PID:76146"
+2020-01-13 00:54:39:189 [RemoteDebugger]         isActive: 0
+2020-01-13 00:54:39:189 [RemoteDebugger]         isAutomationEnabled: "Unknown"
+2020-01-13 00:54:39:189 [RemoteDebugger]         pageArray: 'Waiting for data'
+2020-01-13 00:54:39:189 [RemoteDebugger] Finally selecting app PID:77420: [{"id":2,"title":"","url":"file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html","isKey":false}]
+2020-01-13 00:54:39:189 [RemoteDebugger] Selected app after 56ms
+2020-01-13 00:54:39:190 [W3C (542700ec)] Responding to client with driver.getContexts() result: ["NATIVE_APP","WEBVIEW_77420.2"]
+2020-01-13 00:54:39:191 [HTTP] <-- GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/contexts 200 59 ms - 42
+2020-01-13 00:54:39:191 [HTTP] 
+2020-01-13 00:54:39:195 [HTTP] --> POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context
+2020-01-13 00:54:39:195 [HTTP] {"name":"WEBVIEW_77420.2"}
+2020-01-13 00:54:39:196 [W3C (542700ec)] Calling AppiumDriver.setContext() with args: ["WEBVIEW_77420.2","542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:54:39:196 [XCUITest] Executing command 'setContext'
+2020-01-13 00:54:39:197 [XCUITest] Attempting to set context to 'WEBVIEW_77420.2' from 'NATIVE_APP'
+2020-01-13 00:54:39:197 [RemoteDebugger] Selecting page '2' on app 'PID:77420' and forwarding socket setup
+2020-01-13 00:54:39:198 [RemoteDebugger] Sending '_rpc_forwardSocketSetup:' message to app 'PID:77420', page '2' (id: 4)
+2020-01-13 00:54:39:203 [RemoteDebugger] Sending to Web Inspector took 6ms
+2020-01-13 00:54:39:203 [RemoteDebugger] Sender key set
+2020-01-13 00:54:39:204 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 5)
+2020-01-13 00:54:39:208 [RemoteDebugger] Target created for app 'PID:77420' and page '2': {"targetId":"page-12","type":"page"}
+2020-01-13 00:54:39:209 [RemoteDebugger] Sending to Web Inspector took 5ms
+2020-01-13 00:54:39:210 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 6)
+2020-01-13 00:54:39:213 [RemoteDebugger] Sending to Web Inspector took 4ms
+2020-01-13 00:54:39:213 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 7)
+2020-01-13 00:54:39:217 [RemoteDebugger] Sending to Web Inspector took 4ms
+2020-01-13 00:54:39:217 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 8)
+2020-01-13 00:54:39:220 [RemoteDebugger] Sending to Web Inspector took 3ms
+2020-01-13 00:54:39:221 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 9)
+2020-01-13 00:54:39:224 [RemoteDebugger] Sending to Web Inspector took 4ms
+2020-01-13 00:54:39:225 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 10)
+2020-01-13 00:54:39:230 [RemoteDebugger] Sending to Web Inspector took 6ms
+2020-01-13 00:54:39:231 [RemoteDebugger] Checking document readyState
+2020-01-13 00:54:39:231 [RemoteDebugger] Sending javascript command: 'document.readyState;'
+2020-01-13 00:54:39:232 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2' (id: 11)
+2020-01-13 00:54:39:241 [RemoteDebugger] Setting communication protocol: using Target-based communication
+2020-01-13 00:54:39:241 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 13)
+2020-01-13 00:54:39:417 [RemoteDebugger] Page changed: {
+2020-01-13 00:54:39:418 [RemoteDebugger]   "2": {
+2020-01-13 00:54:39:418 [RemoteDebugger]     "WIRTitleKey": "",
+2020-01-13 00:54:39:418 [RemoteDebugger]     "WIRTypeKey": "WIRTypeWeb",
+2020-01-13 00:54:39:418 [RemoteDebugger]     "WIRURLKey": "file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html",
+2020-01-13 00:54:39:418 [RemoteDebugger]     "WIRPageIdentifierKey": 2,
+2020-01-13 00:54:39:418 [RemoteDebugger]     "WIRConnectionIdentifierKey": "7df7de1e-04bc-4561-82d7-5b94208cd81e"
+2020-01-13 00:54:39:418 [RemoteDebugger]   }
+2020-01-13 00:54:39:419 [RemoteDebugger] }
+2020-01-13 00:54:39:419 [XCUITest] Remote debugger notified us of a new page listing: {"appIdKey":"77420","pageArray":[{"id":2,"title":"","url":"file:///Users/mdonnellon/Library/Developer/CoreSimulator/Devices/C20E708A-651B-4895-AE76-E7578D3BB0D6/data/Containers/Bundle/Application/CC6F208E-E064-4ACA-8C50-3363EDCBDFA7/HelloCordova.app/www/index.html","isKey":true}]}
+2020-01-13 00:54:39:419 [XCUITest] We are in the middle of selecting a page, ignoring
+2020-01-13 00:54:44:239 [RemoteDebugger] Page readiness check timed out after 5000ms
+2020-01-13 00:54:44:239 [RemoteDebugger] Page unloading
+2020-01-13 00:54:44:239 [RemoteDebugger] Waiting for dom...
+2020-01-13 00:54:44:239 [RemoteDebugger] Page loaded, verifying whether ready
+2020-01-13 00:54:44:745 [RemoteDebugger] Checking document readyState
+2020-01-13 00:54:44:745 [RemoteDebugger] Sending javascript command: 'document.readyState;'
+2020-01-13 00:54:44:746 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 15)
+2020-01-13 00:54:49:750 [RemoteDebugger] Page readiness check timed out after 5000ms
+2020-01-13 00:54:49:750 [RemoteDebugger] Page was not ready, retrying
+2020-01-13 00:54:50:254 [RemoteDebugger] Checking document readyState
+2020-01-13 00:54:50:255 [RemoteDebugger] Sending javascript command: 'document.readyState;'
+2020-01-13 00:54:50:255 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 17)
+2020-01-13 00:54:55:259 [RemoteDebugger] Page readiness check timed out after 5000ms
+2020-01-13 00:54:55:259 [RemoteDebugger] Page is ready
+2020-01-13 00:54:55:260 [RemoteDebugger] Selected page after 16062ms
+2020-01-13 00:54:55:260 [RemoteDebugger] Starting to listen for JavaScript console
+2020-01-13 00:54:55:260 [RemoteDebugger] Starting to listen for network events
+2020-01-13 00:54:55:260 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 19)
+2020-01-13 00:54:55:264 [RemoteDebugger] Sending to Web Inspector took 4ms
+2020-01-13 00:54:55:265 [W3C (542700ec)] Responding to client with driver.setContext() result: null
+2020-01-13 00:54:55:265 [HTTP] <-- POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context 200 16070 ms - 14
+2020-01-13 00:54:55:265 [HTTP] 
+2020-01-13 00:54:55:268 [HTTP] --> GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context
+2020-01-13 00:54:55:268 [HTTP] {}
+2020-01-13 00:54:55:268 [W3C (542700ec)] Calling AppiumDriver.getCurrentContext() with args: ["542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:54:55:269 [XCUITest] Executing command 'getCurrentContext'
+2020-01-13 00:54:55:269 [W3C (542700ec)] Responding to client with driver.getCurrentContext() result: "WEBVIEW_77420.2"
+2020-01-13 00:54:55:270 [HTTP] <-- GET /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/context 200 2 ms - 27
+2020-01-13 00:54:55:271 [HTTP] 
+2020-01-13 00:54:55:276 [HTTP] --> POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+2020-01-13 00:54:55:277 [HTTP] {"using":"css selector","value":"input"}
+2020-01-13 00:54:55:278 [W3C (542700ec)] Calling AppiumDriver.findElement() with args: ["css selector","input","542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:54:55:278 [XCUITest] Executing command 'findElement'
+2020-01-13 00:54:55:279 [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+2020-01-13 00:54:55:280 [BaseDriver] Waiting up to 0 ms for condition
+2020-01-13 00:54:55:280 [RemoteDebugger] Executing atom 'find_element'
+2020-01-13 00:54:55:289 [RemoteDebugger] Executing 'find_element' atom in default context
+2020-01-13 00:54:55:290 [RemoteDebugger] Sending javascript command: '(function(){return function(){var k=this;functi...'
+2020-01-13 00:54:55:292 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 21)
+2020-01-13 00:56:25:283 [HTTP] <-- POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element - - ms - -
+2020-01-13 00:56:25:283 [HTTP] 
+2020-01-13 00:56:25:285 [HTTP] --> POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+2020-01-13 00:56:25:285 [HTTP] {"using":"css selector","value":"input"}
+2020-01-13 00:56:25:286 [W3C (542700ec)] Calling AppiumDriver.findElement() with args: ["css selector","input","542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:56:25:286 [XCUITest] Executing command 'findElement'
+2020-01-13 00:57:55:291 [HTTP] <-- POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element - - ms - -
+2020-01-13 00:57:55:292 [HTTP] 
+2020-01-13 00:57:55:293 [HTTP] --> POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+2020-01-13 00:57:55:294 [HTTP] {"using":"css selector","value":"input"}
+2020-01-13 00:57:55:294 [W3C (542700ec)] Calling AppiumDriver.findElement() with args: ["css selector","input","542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:57:55:294 [XCUITest] Executing command 'findElement'
+2020-01-13 00:59:25:300 [HTTP] <-- POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element - - ms - -
+2020-01-13 00:59:25:300 [HTTP] 
+2020-01-13 00:59:25:301 [HTTP] --> POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element
+2020-01-13 00:59:25:301 [HTTP] {"using":"css selector","value":"input"}
+2020-01-13 00:59:25:302 [W3C (542700ec)] Calling AppiumDriver.findElement() with args: ["css selector","input","542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 00:59:25:302 [XCUITest] Executing command 'findElement'
+2020-01-13 00:59:55:296 [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+2020-01-13 00:59:55:296 [BaseDriver] Waiting up to 0 ms for condition
+2020-01-13 00:59:55:296 [RemoteDebugger] Executing atom 'find_element'
+2020-01-13 00:59:55:297 [RemoteDebugger] Executing 'find_element' atom in default context
+2020-01-13 00:59:55:297 [RemoteDebugger] Sending javascript command: '(function(){return function(){var k=this;functi...'
+2020-01-13 00:59:55:298 [RemoteDebugger] Sending '_rpc_forwardSocketData:' message to app 'PID:77420', page '2', target 'page-12' (id: 23)
+2020-01-13 00:59:55:302 [W3C (542700ec)] Encountered internal error running command: Error: Did not get any response after 300001ms
+2020-01-13 00:59:55:302 [W3C (542700ec)]     at XCUITestDriver.waitForAtom (/Users/mdonnellon/.nvm/versions/node/v10.17.0/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/web.js:280:13)
+2020-01-13 01:00:55:306 [HTTP] <-- POST /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c/element - - ms - -
+2020-01-13 01:00:55:307 [HTTP] 
+2020-01-13 01:00:55:327 [HTTP] --> DELETE /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c
+2020-01-13 01:00:55:327 [HTTP] {}
+2020-01-13 01:00:55:327 [W3C (542700ec)] Calling AppiumDriver.deleteSession() with args: ["542700ec-894c-45a1-a6c1-ead03bc2ef9c"]
+2020-01-13 01:00:55:328 [BaseDriver] Event 'quitSessionRequested' logged at 1578877255328 (12:00:55 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 01:00:55:328 [Appium] Removing session 542700ec-894c-45a1-a6c1-ead03bc2ef9c from our master session list
+2020-01-13 01:00:55:329 [WD Proxy] Matched '/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c' to command name 'deleteSession'
+2020-01-13 01:00:55:331 [WD Proxy] Proxying [DELETE /session/542700ec-894c-45a1-a6c1-ead03bc2ef9c] to [DELETE http://127.0.0.1:8100/session/12B0AEC0-BB0E-4318-9612-290554863A11] with no body
+2020-01-13 01:00:55:477 [RemoteDebugger] Application 'PID:77420' disconnected. Removing from app dictionary.
+2020-01-13 01:00:55:477 [RemoteDebugger] Current app is PID:77420
+2020-01-13 01:00:55:477 [RemoteDebugger] No longer have app id. Attempting to find new one.
+2020-01-13 01:00:55:478 [RemoteDebugger] Application 'PID:77423' disconnected. Removing from app dictionary.
+2020-01-13 01:00:55:478 [RemoteDebugger] Current app is undefined
+2020-01-13 01:00:56:424 [WD Proxy] Got response with status 200: {
+2020-01-13 01:00:56:424 [WD Proxy]   "value" : null,
+2020-01-13 01:00:56:424 [WD Proxy]   "sessionId" : "D8FE7877-2143-4352-82FE-D7510F795F42"
+2020-01-13 01:00:56:424 [WD Proxy] }
+2020-01-13 01:00:56:425 [DevCon Factory] Releasing connections for C20E708A-651B-4895-AE76-E7578D3BB0D6 device on any port number
+2020-01-13 01:00:56:425 [DevCon Factory] Found cached connections to release: ["C20E708A-651B-4895-AE76-E7578D3BB0D6:8100"]
+2020-01-13 01:00:56:426 [DevCon Factory] Cached connections count: 0
+2020-01-13 01:00:56:426 [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+2020-01-13 01:00:56:426 [XCUITest] In a web session. Removing remote debugger
+2020-01-13 01:00:56:427 [RemoteDebugger] Disconnecting from remote debugger
+2020-01-13 01:00:56:427 [RemoteDebugger] Cleaning up listeners
+2020-01-13 01:00:56:427 [IOSSimulatorLog] Stopping iOS log capture
+2020-01-13 01:00:56:435 [BaseDriver] Event 'quitSessionFinished' logged at 1578877256435 (12:00:56 GMT+1100 (Australian Eastern Daylight Time))
+2020-01-13 01:00:56:435 [W3C (542700ec)] Received response: null
+2020-01-13 01:00:56:436 [W3C (542700ec)] But deleting session, so not returning
+2020-01-13 01:00:56:436 [W3C (542700ec)] Responding to client with driver.deleteSession() result: null
+2020-01-13 01:00:56:437 [W3C (542700ec)] Destroying socket connection
+2020-01-13 01:00:56:437 [HTTP] <-- DELETE /wd/hub/session/542700ec-894c-45a1-a6c1-ead03bc2ef9c 200 1111 ms - 14
+2020-01-13 01:00:56:438 [HTTP] 
+2020-01-13 01:00:56:568 [Appium] Received SIGTERM - shutting down
+2020-01-13 01:04:55:301 [W3C (542700ec)] Encountered internal error running command: Error: Did not get any response after 300000ms
+2020-01-13 01:04:55:301 [W3C (542700ec)]     at XCUITestDriver.waitForAtom (/Users/mdonnellon/.nvm/versions/node/v10.17.0/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/web.js:280:13)
+2020-01-13 01:04:55:305 uncaughtException: write EPIPE
+Error: write EPIPE
+    at WriteWrap.afterWrite (net.js:789:14)
