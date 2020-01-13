@@ -112,9 +112,7 @@ exports.config = {
     // see details: https://webdriver.io/docs/appium-service.html
     appium: {
         command: 'appium',
-        logPath: './',
-        args: ['--log-level','debug','--log-timestamp']
-        
+        args: ['--log-timestamp', '--log', './artifacts/logs/appium.log']
     },
     //
     // Framework you want to run your specs with.

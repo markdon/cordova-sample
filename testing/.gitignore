@@ -1,5 +1,4 @@
 node_modules
-artifacts
 *.log
 appium.txt
 .DS_Store
